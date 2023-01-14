@@ -1,0 +1,32 @@
+---
+title: "Developing Data Products"
+author: "giannis panagiotakis"
+date: "2023-01-14"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## The TootGrowth Dataset
+
+The Effect of Vitamin C on Tooth Growth in Guinea Pigs
+
+## Description
+
+The response is the length of odontoblasts (cells responsible for tooth growth) in 60 guinea pigs. Each animal received one of three dose levels of vitamin C (0.5, 1, and 2 mg/day) by one of two delivery methods, orange juice or ascorbic acid (a form of vitamin C and coded as VC).
+
+## Data
+
+```{r echo = FALSE}
+data("ToothGrowth")
+summary(ToothGrowth)
+```
+
+## Pair Plot
+
+```{r ToothGrowth}
+plot(ToothGrowth)
+```
+
